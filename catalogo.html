@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Catálogo — Papelería Fantino</title>
+<meta name="description" content="Explorá nuestro catálogo de cuadernos, lápices, oficina e impresiones.">
+<meta property="og:title" content="Catálogo — Papelería Fantino">
+<meta property="og:description" content="Explorá nuestro catálogo de cuadernos, lápices, oficina e impresiones.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo Papelería Fantino">
+      <span>Papelería Fantino</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" class="active">Catálogo</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="btn-primary">Visítanos</a>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="block container">
+  <div class="section-head">
+    <span class="eyebrow">Catálogo</span>
+    <h2>Nuestros productos</h2>
+    <p>Filtrá por categoría. Todos los productos están disponibles en nuestra tienda.</p>
+  </div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-cat="Todos">Todos</button>
+    <button class="tab" data-cat="Cuadernos">Cuadernos</button>
+    <button class="tab" data-cat="Lápices y bolígrafos">Lápices y bolígrafos</button>
+    <button class="tab" data-cat="Oficina">Oficina</button>
+    <button class="tab" data-cat="Impresiones">Impresiones</button>
+    <button class="tab" data-cat="Encuadernado">Encuadernado</button>
+    <button class="tab" data-cat="Arte y pintura">Arte y pintura</button>
+    <button class="tab" data-cat="Mochilas y carteras">Mochilas y carteras</button>
+    <button class="tab" data-cat="Matemática y geometría">Matemática y geometría</button>
+  </div>
+  <div class="grid grid-4" id="products">
+    <div class="card" data-cat="Cuadernos">
+      <img class="card-img" src="libreta con espiral.jpeg"Cuaderno A4 espiral 100 hojas" loading="lazy">
+      <div class="card-body"><h3>Cuaderno sencillo con espiral</h3><p>Disponible en tienda</p><div class="price">$350</div></div>
+    </div>
+    <div class="card" data-cat="Cuadernos">
+      <img class="card-img" src="libretas.jpeg" alt="Cuaderno tapa dura A5" loading="lazy">
+      <div class="card-body"><h3>Cuaderno</h3><p>Disponible en tienda</p><div class="price">$150</div></div>
+    </div>
+    <div class="card" data-cat="Cuadernos">
+      <img class="card-img" src="catedras.jpeg" alt="Cuaderno universitario 200 hojas" loading="lazy">
+      <div class="card-body"><h3>Catedra grande</h3><p>Disponible en tienda</p><div class="price">$400</div></div>
+    </div>
+    <div class="card" data-cat="Cuadernos">
+      <img class="card-img" src="tapacuader.jpg" loading="lazy">
+      <div class="card-body"><h3>Cuaderno cosido tapa flexible</h3><p>Disponible en tienda</p><div class="price">$130</div></div>
+    </div>
+    <div class="card" data-cat="Cuadernos">
+      <img class="card-img" src="adesiva nota.jpeg" alt="Block de notas adhesivas" loading="lazy">
+      <div class="card-body"><h3>Block de notas adhesivas</h3><p>Disponible en tienda</p><div class="price">$65</div></div>
+    </div>
+    
+    <div class="card" data-cat="Lápices y bolígrafos">
+      <img class="card-img" src="12 colores.jpeg" alt="Pack 12 lápices de colores" loading="lazy">
+      <div class="card-body"><h3>Pack 12 lápices de colores</h3><p>Disponible en tienda</p><div class="price">$385</div></div>
+    </div>
+    <div class="card" data-cat="Lápices y bolígrafos">
+      <img class="card-img" src="lapiceros.jpeg" alt="Bolígrafo gel x 3" loading="lazy">
+      <div class="card-body"><h3>Bolígrafo </h3><p>Disponible en tienda</p><div class="price">$15</div></div>
+    </div>
+    <div class="card" data-cat="Lápices y bolígrafos">
+      <img class="card-img" src="lapices.jpeg" alt="Lápiz HB Faber-Castell x 12" loading="lazy">
+      <div class="card-body"><h3>Lápiz</h3><p>Disponible en tienda</p><div class="price">$10</div></div>
+    </div>
+    <div class="card" data-cat="Lápices y bolígrafos">
+      <img class="card-img" src="portaminas.jpeg" alt="Bolígrafo retráctil azul" loading="lazy">
+      <div class="card-body"><h3>Portaminas + repuesto</h3><p>Disponible en tienda</p><div class="price">$110</div></div>
+    </div>
+    <div class="card" data-cat="Lápices y bolígrafos">
+      <img class="card-img" src="resaltador.jpg" alt="Marcadores resaltadores x 5" loading="lazy">
+      <div class="card-body"><h3>Marcadores resaltadores x 4</h3><p>Disponible en tienda</p><div class="price">$280</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="carpetas.jpeg" alt="Carpeta A4 con broches" loading="lazy">
+      <div class="card-body"><h3>Carpetas con broches</h3><p>Disponible en tienda</p><div class="price">$385</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="carpetas de plastico.jpeg" alt="Abrochadora metálica" loading="lazy">
+      <div class="card-body"><h3>Carpetas de plastico</h3><p>Disponible en tienda</p><div class="price">$350</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="clip.jpeg" alt="Caja de clips metálicos" loading="lazy">
+      <div class="card-body"><h3>Caja de clips metálicos</h3><p>Disponible en tienda</p><div class="price">$95</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="perfo.jpeg" alt="Perforadora 2 huecos" loading="lazy">
+      <div class="card-body"><h3>Perforadora 2 huecos</h3><p>Disponible en tienda</p><div class="price">$420</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="cinta pegan.jpg" alt="Cinta adhesiva transparente" loading="lazy">
+      <div class="card-body"><h3>Cinta adhesiva transparente pequeña</h3><p>Disponible en tienda</p><div class="price">$65</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="tijera.jpeg" alt="Tijera de oficina" loading="lazy">
+      <div class="card-body"><h3>Tijera de oficina</h3><p>Disponible en tienda</p><div class="price">$130</div></div>
+    </div>
+    <div class="card" data-cat="Oficina">
+      <img class="card-img" src="pizzara.jpeg" alt="Pizarra blanca pequeña" loading="lazy">
+      <div class="card-body"><h3>Pizarra blanca pequeña</h3><p>Disponible en tienda</p><div class="price">$480</div></div>
+    </div>
+    
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="imprecion blan.jpeg" alt="Impresión B/N (por hoja)" loading="lazy">
+      <div class="card-body"><h3>Impresión B/N (por hoja)</h3><p>Disponible en tienda</p><div class="price">$15</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="color.jpeg" alt="Impresión color (por hoja)" loading="lazy">
+      <div class="card-body"><h3>Impresión color (por hoja)</h3><p>Disponible en tienda</p><div class="price">$20</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="COPIAS-A-COLOR.jpg" alt="Fotocopia simple" loading="lazy">
+      <div class="card-body"><h3>Fotocopia simple</h3><p>Disponible en tienda</p><div class="price">$20</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="foto.jpeg" alt="Fotocopia doble faz" loading="lazy">
+      <div class="card-body"><h3>Impresión con papel de fotos</h3><p>Disponible en tienda</p><div class="price">$85</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="11x17.jpeg" alt="Impresión de fotos 10x15" loading="lazy">
+      <div class="card-body"><h3>Impresión 11x17 normal</h3><p>Disponible en tienda</p><div class="price">$25</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="plati.jpeg" alt="Plastificado A4" loading="lazy">
+      <div class="card-body"><h3>Plastificado</h3><p>Disponible en tienda</p><div class="price">$50</div></div>
+    </div>
+    <div class="card" data-cat="Impresiones">
+      <img class="card-img" src="tinta de impresora.jpeg" alt="Plastificado A4" loading="lazy">
+      <div class="card-body"><h3>Tinta de Impresoras</h3><p>Disponible en tienda</p><div class="price">$650</div></div>
+    </div>
+    <div class="card" data-cat="Encuadernado">
+      <img class="card-img" src="encuadernadoo.jpeg" alt="Anillado plástico A4" loading="lazy">
+      <div class="card-body"><h3>Anillado plástico pequeño</h3><p>Disponible en tienda</p><div class="price">$75</div></div>
+    </div>
+    <div class="card" data-cat="Encuadernado">
+      <img class="card-img" src="assets/cat-binding.jpg" alt="Encuadernado tapa dura" loading="lazy">
+      <div class="card-body"><h3>Encuadernado tapa dura grande</h3><p>Disponible en tienda</p><div class="price">$100</div></div>
+    </div>
+
+    <div class="card" data-cat="Encuadernado">
+      <img class="card-img" src="traspa.jpeg" alt="Tapa transparente para anillado" loading="lazy">
+      <div class="card-body"><h3>Tapa transparente para anillado</h3><p>Disponible en tienda</p><div class="price">$75</div></div>
+    </div>
+    <div class="card" data-cat="Arte y pintura">
+      <img class="card-img" src="tempera.jpeg" alt="Témperas 12 colores" loading="lazy">
+      <div class="card-body"><h3>Témperas 12 colores</h3><p>Disponible en tienda</p><div class="price">$280</div></div>
+    </div>
+    <div class="card" data-cat="Arte y pintura">
+      <img class="card-img" src="acuarela.jpeg" alt="Acuarelas pastilla 12 colores" loading="lazy">
+      <div class="card-body"><h3>Acuarelas pastilla 12 colores</h3><p>Disponible en tienda</p><div class="price">$320</div></div>
+    </div>
+    <div class="card" data-cat="Arte y pintura">
+      <img class="card-img" src="pincel.jpg" alt="Set de pinceles x 6" loading="lazy">
+      <div class="card-body"><h3>Set de pinceles x 6</h3><p>Disponible en tienda</p><div class="price">$170</div></div>
+    </div>
+    
+    <div class="card" data-cat="Mochilas y carteras">
+      <img class="card-img" src="mochila.jpeg" alt="Mochila escolar reforzada" loading="lazy">
+      <div class="card-body"><h3>Mochila escolar reforzada</h3><p>Disponible en tienda</p><div class="price">$2500</div></div>
+    </div>
+    <div class="card" data-cat="Mochilas y carteras">
+      <img class="card-img" src="cartuchera.jpeg" alt="Cartuchera doble cierre" loading="lazy">
+      <div class="card-body"><h3>Cartuchera doble cierre</h3><p>Disponible en tienda</p><div class="price">$380</div></div>
+    </div>
+    
+    <div class="card" data-cat="Matemática y geometría">
+      <img class="card-img" src="calculadora.jpeg" alt="Calculadora científica" loading="lazy">
+      <div class="card-body"><h3>Calculadora científica</h3><p>Disponible en tienda</p><div class="price">$950</div></div>
+    </div>
+    <div class="card" data-cat="Matemática y geometría">
+      <img class="card-img" src="reglas.jpeg" alt="Set de geometría completo" loading="lazy">
+      <div class="card-body"><h3>Set de geometría completo</h3><p>Disponible en tienda</p><div class="price">$120</div></div>
+    </div>
+    
+    <div class="card" data-cat="Matemática y geometría">
+      <img class="card-img" src="compas.jpeg" alt="Compás metálico escolar" loading="lazy">
+      <div class="card-body"><h3>Compás escolar</h3><p>Disponible en tienda</p><div class="price">$180</div></div>
+    </div>
+  </div>
+</section>
+<script>
+  const tabs=document.querySelectorAll('#tabs .tab');
+  const items=document.querySelectorAll('#products .card');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    const c=t.dataset.cat;
+    items.forEach(i=>{i.style.display=(c==='Todos'||i.dataset.cat===c)?'':'none';});
+  }));
+</script>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px"><img src="logo.png" alt=""><span>Papelería Fantino</span></div>
+        <p style="font-size:.875rem;color:var(--muted);max-width:300px">Todo lo que necesitas para estudiar y trabajar, en un solo lugar.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horarios</h4>
+        <ul>
+          <li>Lun a Sáb</li>
+          <li>8:00–12:00</li>
+          <li>14:00–18:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+18095741453">809-574-1453</a></li>
+          <li><a href="mailto:papeleriafantino@gmail.com">papeleriafantino@gmail.com</a></li>
+          <li>Fantino, R.D.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 Papelería Fantino. Todos los derechos reservados.</div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/18095741453?text=Hola%20Papeler%C3%ADa%20Fantino%2C%20quer%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.27c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM16.02 5.33c-5.91 0-10.71 4.8-10.71 10.71 0 1.89.49 3.74 1.43 5.36L5 27l5.79-1.71c1.56.85 3.32 1.3 5.21 1.3h.01c5.91 0 10.71-4.8 10.71-10.71 0-2.86-1.11-5.55-3.13-7.57a10.66 10.66 0 0 0-7.57-3.13zm0 19.45h-.01a8.68 8.68 0 0 1-4.42-1.21l-.32-.19-3.43 1.01 1.03-3.34-.21-.34a8.69 8.69 0 0 1-1.33-4.66c0-4.81 3.92-8.73 8.73-8.73 2.33 0 4.52.91 6.17 2.56a8.66 8.66 0 0 1 2.56 6.17c0 4.81-3.92 8.73-8.77 8.73z"/></svg>
+</a>
+</body>
+</html>
